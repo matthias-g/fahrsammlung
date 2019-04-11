@@ -20,9 +20,9 @@
 # Learn more: http://github.com/javan/whenever
 
 every 1.day, at: '0:30 am' do
-  rake 'kaheim:handle_obsolete'
+  rake 'fahrsammlung:handle_obsolete'
 end
 
 every 1.day, at: '1:03 am' do
-  rake 'kaheim:create_history_item'
+  rake 'fahrsammlung:create_history_item'
 end

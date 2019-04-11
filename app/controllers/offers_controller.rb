@@ -3,7 +3,7 @@ class OffersController < ApplicationController
   before_action :set_editable_offer, only: [:edit, :update, :destroy, :toggle_active]
 
   def index
-    @offers = Offer.visible_for(current_user, Offer) #.order(from_date: :asc, updated_at: :desc).includes(:user)
+    @offers = Offer.visible_for(current_user, Offer)
   end
 
   def show
@@ -78,6 +78,6 @@ class OffersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params[:offer].permit(:title, :description, :rent, :size, :gender, :from_date, :to_date, :district, :street, :zip_code)
+      params[:offer].permit(:title, :description, :start_location, :start_time, :seat_count)
     end
 end

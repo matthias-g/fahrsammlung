@@ -14,17 +14,9 @@
   <table class="request-specifics">
     <tbody>
     <tr>
-      <td class="gender">
-        <%= gender_icon request.gender %>
-      </td>
       <td class="time">
-        <%= from_date_info request %>
+        <%= request.start_location %>
       </td>
-      <% if request.to_date %>
-        <td class="time">
-          <%=t 'requests.show.to' %> <%=l request.to_date %>
-        </td>
-      <% end %>
     </tr>
     </tbody>
   </table>

@@ -4,7 +4,7 @@
   </div>
 <% end %>
 <% offers.each do |offer| %>
-    <fieldset class="item sort-item" data-rent="<%= offer.rent %>" data-size="<%= offer.size %>" data-from-date="<%= offer.from_date.to_time.to_i %>" data-updated-at="<%= offer.updated_at.to_i %>">
+    <fieldset class="item sort-item" data-updated-at="<%= offer.updated_at.to_i %>">
       <%= badges_for offer %>
 
       <div class="title">
@@ -15,29 +15,16 @@
         <tbody>
         <tr>
           <td class="icon">
-          </td>
-          <td class="info">
-            <%= gender_icon offer.gender %>
-          </td>
-          <td class="icon">
-            <i class="fa fa-eur"></i>
-          </td>
-          <td class="info">
-            <%= offer.rent %>
-          </td>
-        </tr>
-        <tr>
-          <td class="icon">
             <i class="fa fa-square-o"></i>
           </td>
           <td class="info">
-            <%= offer.size %>m²
+            <%= offer.seat_count %>
           </td>
           <td class="icon">
             <i class="fa fa-long-arrow-right"></i>
           </td>
           <td class="info">
-            <%= date_info offer %>
+            <%= offer.start_time %>
           </td>
         </tr>
         <tr>
@@ -45,7 +32,7 @@
             <i class="fa fa-home"></i>
           </td>
           <td class="info" colspan="3">
-            <%= address_info offer %>
+            <%= offer.start_location %>
           </td>
         </tr>
         </tbody>

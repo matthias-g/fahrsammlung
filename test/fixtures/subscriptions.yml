@@ -1,13 +1,13 @@
 
 unconfirmed:
-  email: unconfirmed.user@kaheim.de
+  email: unconfirmed.user@fahrsammlung.de
   offers: true
   requests: false
   confirmation_token: 119a3824346aaa94441ca
   unsubscribe_token: 1923d1ad7077cdc66e
 
 offer_subscriber:
-  email: send.me.your.offers@kaheim.de
+  email: send.me.your.offers@fahrsammlung.de
   offers: true
   requests: false
   unsubscribe_token: bcb77b98222dc346ee4e
@@ -20,7 +20,7 @@ offer_subscriber_unconfirmed:
   unsubscribe_token: 1a4f5d9bf68519d23fa9a783
 
 request_subscriber:
-  email: send.me.your.requests@kaheim.de
+  email: send.me.your.requests@fahrsammlung.de
   requests: true
   offers: false
   unsubscribe_token: 7ac657a2d0b948094
@@ -33,7 +33,7 @@ request_subscriber_unconfirmed:
   unsubscribe_token: 293a4b176c9c0e1e9329
 
 everything_subscriber:
-  email: send.me.everything@kaheim.de
+  email: send.me.everything@fahrsammlung.de
   requests: true
   offers: true
   unsubscribe_token: 3d3e9b453c7ea8da2acb20

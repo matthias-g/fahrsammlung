@@ -18,7 +18,7 @@ module Admin
       end
 
       notification_email = ActionMailer::Base.deliveries.last
-      assert_equal '[Kaheim] ' + I18n.t('subscriptions.new_item_notification.subject'), notification_email.subject
+      assert_equal '[Fahrsammlung] ' + I18n.t('subscriptions.new_item_notification.subject'), notification_email.subject
       assert_match(/.*wurde ein neues Angebot eingetragen.*/, notification_email.body.to_s)
 
       user = User.find(user.id)
@@ -35,7 +35,7 @@ module Admin
       end
 
       notification_email = ActionMailer::Base.deliveries.last
-      assert_equal '[Kaheim] ' + I18n.t('subscriptions.new_item_notification.subject'), notification_email.subject
+      assert_equal '[Fahrsammlung] ' + I18n.t('subscriptions.new_item_notification.subject'), notification_email.subject
       assert_match(/.*wurde ein neues Gesuch eingetragen.*/, notification_email.body.to_s)
 
       user = User.find(user.id)

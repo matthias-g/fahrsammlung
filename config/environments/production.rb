@@ -61,11 +61,11 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "kaheim_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "fahrsammlung_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { host: 'kaheim.de', protocol: 'https' }
+  config.action_mailer.default_url_options = { host: 'fahrsammlung.de', protocol: 'https' }
   config.action_mailer.delivery_method = :sendmail
   config.action_mailer.perform_deliveries = true
 
@@ -98,7 +98,7 @@ Rails.application.configure do
 
   # Deliver mails on exceptions
   config.middleware.use ExceptionNotification::Rack, email: {
-      sender_address: 'error@kaheim.de',
+      sender_address: 'error@fahrsammlung.de',
       exception_recipients: 'dev.tim.zeitz@googlemail.com'
   }
 

@@ -14,19 +14,14 @@ en:
       offer:
         title: "Title"
         description: "Description"
-        to_date: "Available until"
-        from_date: "Available from"
         created_at: "Created at"
-        district: 'District'
-        street: 'Street'
-        zip_code: 'ZIP'
-        rent: 'Rent'
-        size: 'Size'
+        seat_count: 'Seat Count'
+        start_location: Start Location
+        start_time: Start Time
       request:
         title: "Title"
         description: "Description"
-        from_date: Need from
-        to_date: "Moving out"
+        start_location: Start Location
         created_at: "Created at"
       user:
         email: "Email"
@@ -82,12 +77,12 @@ en:
     creation_success_unlock_required: "%{model} was successfully created. Since this is your first %{model} an admin has to unlock it."
     creation_success_confirmation_required: "%{model} was successfully created. It becomes visible after you have confirmed your email address."
     about: Contact
-    kaheim: About Kaheim
+    fahrsammlung: About Fahrsammlung
     dot: dot
 
   privacy:
     warning: Please do not share any sensible data. All %{model} are publicly accessible.
-    explanation: There is a contact form under your %{model} on the website. People can use it to contact you. Kaheim will then send you an Email with the reply. Your contact data is safe (unless you put it in the description).
+    explanation: There is a contact form under your %{model} on the website. People can use it to contact you. Fahrsammlung will then send you an Email with the reply. Your contact data is safe (unless you put it in the description).
 
   sort:
     sorted: Sorted by
@@ -174,7 +169,7 @@ en:
     subscribe_notification:
       subject: "Subscription created"
     new_item_notification:
-      subject: "New item on Kaheim"
+      subject: "New item on Fahrsammlung"
 
   items:
     locked: User not unlocked
@@ -190,7 +185,7 @@ en:
     answer_mail:
       subject: "Reply to '%{title}'"
     answer_mail_notification:
-      subject: "Your message sent through kaheim.de"
+      subject: "Your message sent through fahrsammlung.de"
     reactivate_item_mail:
       subject: "Update item?"
 
@@ -212,8 +207,8 @@ en:
   pages:
     about:
       responsible: Responsible for this site
-    kaheim:
-      project: The Kaheim project
+    fahrsammlung:
+      project: The Fahrsammlung project
       source: The source code is available on
       issues1: Bugs, problems and feature requests can also be filed on
       issues2: ""

@@ -20,19 +20,14 @@ de:
       offer:
         title: "Titel"
         description: "Beschreibung"
-        from_date: 'Frei ab'
-        to_date: 'Frei bis'
         created_at: "Erstellt am"
-        district: 'Stadtteil'
-        street: 'Straße und Hausnummer'
-        zip_code: 'PLZ'
-        rent: 'Miete (warm)'
-        size: 'Fläche'
+        seat_count: 'Anzahl Plätze'
+        start_location: Abfahrtsort
+        start_time: Abfahrtszeit
       request:
         title: "Titel"
         description: "Beschreibung"
-        from_date: "Suche zum"
-        to_date: "Auszug"
+        start_location: Abfahrtsort
         created_at: "Erstellt am"
       user:
         email: "E-Mail"
@@ -88,12 +83,12 @@ de:
     creation_success_unlock_required: "%{model} wurde erfolgreich erstellt. Da das dein erstes %{model} ist, muss es noch von einem Admin freigeschaltet werden."
     creation_success_confirmation_required: "%{model} wurde erfolgreich erstellt. Bevor es sichtbar wird, musst du erst noch deine E-Mail-Adresse bestätigen."
     about: Impressum / Datenschutz
-    kaheim: Über Kaheim
+    fahrsammlung: Über Fahrsammlung
     dot: punkt
 
   privacy:
     warning: Bitte keine sensiblen Daten angeben, da alle %{model} öffentlich einsehbar sind!
-    explanation: Unter deinem %{model} wird auf der Website ein Kontaktformular angezeigt mit dem Interessenten auf dein %{model} antworten können. Kaheim schickt dir dann eine Mail mit der Antwort. Deine Kontaktdaten bleiben geschützt (solange du sie nicht oben angibst).
+    explanation: Unter deinem %{model} wird auf der Website ein Kontaktformular angezeigt mit dem Interessenten auf dein %{model} antworten können. Fahrsammlung schickt dir dann eine Mail mit der Antwort. Deine Kontaktdaten bleiben geschützt (solange du sie nicht oben angibst).
 
   sort:
     sorted: Sortiert nach
@@ -180,7 +175,7 @@ de:
     subscribe_notification:
       subject: "Abonnement erstellt"
     new_item_notification:
-      subject: "Neuer Eintrag auf Kaheim"
+      subject: "Neuer Eintrag auf Fahrsammlung"
 
   items:
     locked: Benutzer nicht freigeschaltet
@@ -196,7 +191,7 @@ de:
     answer_mail:
       subject: "Antwort auf '%{title}'"
     answer_mail_notification:
-      subject: "Deine Nachricht über Kaheim"
+      subject: "Deine Nachricht über Fahrsammlung"
     reactivate_item_mail:
       subject: "Eintrag verlängern?"
 
@@ -217,8 +212,8 @@ de:
   pages:
     about:
       responsible: Verantwortlich für diese Website
-    kaheim:
-      project: Das Kaheim-Projekt
+    fahrsammlung:
+      project: Das Fahrsammlung-Projekt
       source: Der Quellcode ist verfügbar auf
       issues1: Bugs, Probleme und Feature Requests können auf
       issues2: eingetragen werden

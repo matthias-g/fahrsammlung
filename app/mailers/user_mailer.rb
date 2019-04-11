@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "Kaheim <no-reply@kaheim.de>"
+  default from: "Fahrsammlung <no-reply@fahrsammlung.de>"
 
   def answer_mail answer
     @content = answer.message
