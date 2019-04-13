@@ -24,6 +24,9 @@
     <table class="request-specifics">
       <tbody>
       <tr>
+        <td class="icon">
+          <i class="fas fa-home"></i>
+        </td>
         <td class="time">
           <%= @request.start_location %>
         </td>
@@ -39,7 +42,7 @@
   <% if current_user != @request.user %>
     <%= render 'answers/form', answer: @answer ||= @request.answers.build %>
   <% else %>
-    <h2><i class="fa fa-comments-o"></i> <%= t 'answers.title' %></h2>
+    <h2><i class="fas fa-comments-o"></i> <%= t 'answers.title' %></h2>
     <% if @request.answers.count > 0 %>
       <%= render @request.answers %>
     <% else %>
@@ -59,9 +62,9 @@
     <% end %>
     <%= link_to t('helpers.links.edit'), edit_request_path(@request), class: 'btn btn-default' %>
     <% if @request.is_public? %>
-      <%= link_to '<i class="fa fa-eye-slash"></i> '.html_safe + t('helpers.links.hide'), toggle_active_request_path(@request), method: :put, class: 'btn btn-default' %>
+      <%= link_to '<i class="fas fa-eye-slash"></i> '.html_safe + t('helpers.links.hide'), toggle_active_request_path(@request), method: :put, class: 'btn btn-default' %>
     <% else %>
-      <%= link_to '<i class="fa fa-eye"></i> '.html_safe + t('helpers.links.make_public'), toggle_active_request_path(@request), method: :put, class: 'btn btn-default' %>
+      <%= link_to '<i class="fas fa-eye"></i> '.html_safe + t('helpers.links.make_public'), toggle_active_request_path(@request), method: :put, class: 'btn btn-default' %>
     <% end %>
     <%= link_to t('helpers.links.destroy'),
                 request_path(@request),

@@ -55,7 +55,7 @@ gem 'autoprefixer-rails', '~> 9.5.0'
 gem 'bootstrap_form', '~> 2.7'
 
 gem 'bootstrap-datepicker-rails', '~> 1.8.0'
-gem 'font-awesome-rails', '~> 4.7.0'
+gem 'font-awesome-sass', '~> 5.8.1'
 
 # better links in locales yml.
 gem 'it'
