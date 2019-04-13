@@ -16,6 +16,13 @@ namespace :fahrsammlung do
     HistoryItem.create({offers_count: offers_count, requests_count: requests_count})
   end
 
+  desc 'unlock all locked users who have offers or requests'
+  task unlock_locked_users: :environment do
+    User.locked.each do |user|
+      user.unlock! if user.offers.count > 0 || user.requests.count > 0
+    end
+  end
+
   def handle_obsolete item
     reactivator = ItemReactivator.find_by item: item
     if reactivator.nil?

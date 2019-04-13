@@ -26,3 +26,7 @@ end
 every 1.day, at: '1:03 am' do
   rake 'fahrsammlung:create_history_item'
 end
+
+every 10.minutes do
+  rake 'fahrsammlung:unlock_locked_users'
+end
