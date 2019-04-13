@@ -10,15 +10,15 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="70.240921mm"
-   height="16.014578mm"
-   viewBox="0 0 70.240921 16.014578"
+   height="10.202333mm"
+   viewBox="0 0 70.240921 10.202334"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="banner.svg"
-   inkscape:export-filename="/home/grundmann/ruby-on-rails/fahrsammlung/app/assets/images/banner.png"
-   inkscape:export-xdpi="174.46603"
-   inkscape:export-ydpi="174.46603">
+   sodipodi:docname="banner klein.svg"
+   inkscape:export-filename="/home/grundmann/ruby-on-rails/fahrsammlung/app/assets/images/banner-klein.png"
+   inkscape:export-xdpi="49.79253"
+   inkscape:export-ydpi="49.79253">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -30,7 +30,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
      inkscape:cx="118.62152"
-     inkscape:cy="31.360914"
+     inkscape:cy="9.393375"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,34 +76,16 @@
          id="flowPara4753" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot4755"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:100%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:100%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#999999;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        transform="scale(0.26458333)"><flowRegion
          id="flowRegion4757"
-         style="line-height:100%;letter-spacing:0px"><rect
+         style="line-height:100%;letter-spacing:0px;fill:#999999"><rect
            id="rect4759"
            width="292.14282"
            height="53.571404"
            x="151.42857"
            y="148.23398"
-           style="line-height:100%;letter-spacing:0px" /></flowRegion><flowPara
+           style="line-height:100%;letter-spacing:0px;fill:#999999" /></flowRegion><flowPara
          id="flowPara4761"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium'">Fahrsammlung</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,4.3751376,8.0213862)"
-       xml:space="preserve"
-       id="flowRoot4755-9"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:100%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
-         id="flowRegion4757-1"
-         style="line-height:100%;letter-spacing:0px"><rect
-           id="rect4759-5"
-           width="284.28571"
-           height="42.857124"
-           x="151.42857"
-           y="148.23398"
-           style="line-height:100%;letter-spacing:0px" /></flowRegion><flowPara
-         id="flowPara4761-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.33333397px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">zur <flowSpan
-   style="font-size:29.33333397px;fill:#e84c05;fill-opacity:1"
-   id="flowSpan4795">studi<flowSpan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:29.33333397px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium'"
-   id="flowSpan4797">kon </flowSpan>2019 </flowSpan></flowPara></flowRoot>  </g>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';fill:#999999">Fahrsammlung</flowPara></flowRoot>  </g>
 </svg>

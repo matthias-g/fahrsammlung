@@ -5,7 +5,7 @@
   <title><%= (yield(:title) + ' - ' unless yield(:title).blank?).to_s + 'Fahrsammlung' %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <%= favicon_link_tag 'logo-inverted.png' %>
+  <%= favicon_link_tag 'logo.png' %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,7 +24,7 @@
           <span class="icon-bar"></span>
         </button>
         <%= link_to root_path, class: 'navbar-brand' do %>
-          <%= image_tag 'banner-faecher.png', id: 'banner', alt: 'Fahrsammlung' %>
+          <%= image_tag 'banner-klein.png', id: 'banner', alt: 'Fahrsammlung' %>
         <% end %>
       </div>
 
