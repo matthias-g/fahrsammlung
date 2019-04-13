@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_11_202209) do
+ActiveRecord::Schema.define(version: 2019_04_13_080612) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,7 +65,8 @@ ActiveRecord::Schema.define(version: 2019_04_11_202209) do
     t.boolean "is_public", default: true
     t.string "start_location"
     t.integer "seat_count"
-    t.datetime "start_time"
+    t.date "start_date"
+    t.string "start_time"
   end
 
   create_table "requests", force: :cascade do |t|

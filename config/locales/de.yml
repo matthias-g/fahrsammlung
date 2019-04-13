@@ -21,9 +21,10 @@ de:
         title: "Titel"
         description: "Beschreibung"
         created_at: "Erstellt am"
-        seat_count: 'Anzahl Plätze'
+        seat_count: 'Anzahl freie Plätze'
         start_location: Abfahrtsort
-        start_time: Abfahrtszeit
+        start_date: Abfahrtstag
+        start_time: Abfahrtsuhrzeit
       request:
         title: "Titel"
         description: "Beschreibung"
@@ -181,8 +182,8 @@ de:
     locked: Benutzer nicht freigeschaltet
     outdated: Abgelaufen
     placeholder:
-      title: "Das Wichtigste deines %{model}s für die Übersicht. Detailliertere Infos kommen in die Beschreibung."
-      description: "Detaillierte Infos und ausführliche Beschreibung."
+      title: "Das Wichtigste deines %{model}s für die Übersicht"
+      description: "Weitere Informationen"
       temporal: '(bei Zwischenmiete)'
     unconfirmed: E-Mail-Adresse unbestätigt
     reactivate: Wieder aktivieren

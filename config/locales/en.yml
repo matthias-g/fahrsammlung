@@ -15,9 +15,10 @@ en:
         title: "Title"
         description: "Description"
         created_at: "Created at"
-        seat_count: 'Seat Count'
-        start_location: Start Location
-        start_time: Start Time
+        seat_count: 'Offered seat count'
+        start_location: Start location
+        start_date: Start day
+        start_time: Start time
       request:
         title: "Title"
         description: "Description"
@@ -175,8 +176,8 @@ en:
     locked: User not unlocked
     outdated: Outdated
     placeholder:
-      title: "Most important information for the overview. Put detailed information in the description."
-      description: "Detailed information and description."
+      title: "Most important information for the overview"
+      description: "Additional information"
       temporal: '(if temporal)'
     unconfirmed: Unconfirmed email address
     reactivate: Reactivate

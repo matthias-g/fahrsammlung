@@ -31,18 +31,24 @@
           <%= @offer.seat_count %>
         </td>
         <td class="icon">
-          <i class="fas fa-clock"></i>
+          <i class="fas fa-calendar"></i>
         </td>
         <td class="info">
-          <%= @offer.start_time %>
+          <%= l @offer.start_date %>
         </td>
       </tr>
       <tr>
         <td class="icon">
           <i class="fas fa-home"></i>
         </td>
-        <td class="info" colspan="3">
+        <td class="info">
           <%= @offer.start_location %>
+        </td>
+        <td class="icon">
+          <i class="fas fa-clock"></i>
+        </td>
+        <td class="info">
+          <%= @offer.start_time %>
         </td>
       </tr>
       </tbody>

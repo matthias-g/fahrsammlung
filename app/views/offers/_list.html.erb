@@ -4,57 +4,63 @@
   </div>
 <% end %>
 <% offers.each do |offer| %>
-    <fieldset class="item sort-item" data-updated-at="<%= offer.updated_at.to_i %>">
-      <%= badges_for offer %>
+  <fieldset class="item sort-item" data-updated-at="<%= offer.updated_at.to_i %>">
+    <%= badges_for offer %>
 
-      <div class="title">
-        <strong><%= link_to offer.title, offer %></strong>
+    <div class="title">
+      <strong><%= link_to offer.title, offer %></strong>
+    </div>
+
+    <table class="offer-specifics">
+      <tbody>
+      <tr>
+        <td class="icon">
+          <i class="fas fa-car-side"></i>
+        </td>
+        <td class="info">
+          <%= offer.seat_count %>
+        </td>
+        <td class="icon">
+          <i class="fas fa-calendar"></i>
+        </td>
+        <td class="info">
+          <%= l offer.start_date %>
+        </td>
+      </tr>
+      <tr>
+        <td class="icon">
+          <i class="fas fa-home"></i>
+        </td>
+        <td class="info">
+          <%= offer.start_location %>
+        </td>
+        <td class="icon">
+          <i class="fas fa-clock"></i>
+        </td>
+        <td class="info">
+          <%= offer.start_time %>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="description">
+      <div class="short transition"></div>
+      <div class="long transition"><%= auto_link simple_format(offer.description) %></div>
+    </div>
+
+    <div class="contact">
+      <div class="inline-button toggle-collapse">
+        <div class="short"><%= t 'helpers.more' %>&#x25BC;</div>
+        <div class="long"><%= t 'helpers.less' %>&#x25B2;</div>
       </div>
 
-      <table class="offer-specifics">
-        <tbody>
-        <tr>
-          <td class="icon">
-            <i class="fas fa-car-side"></i>
-          </td>
-          <td class="info">
-            <%= offer.seat_count %>
-          </td>
-          <td class="icon">
-            <i class="fas fa-clock"></i>
-          </td>
-          <td class="info">
-            <%= offer.start_time %>
-          </td>
-        </tr>
-        <tr>
-          <td class="icon">
-            <i class="fas fa-home"></i>
-          </td>
-          <td class="info" colspan="3">
-            <%= offer.start_location %>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-
-      <div class="description">
-        <div class="short transition"></div>
-        <div class="long transition"><%= auto_link simple_format(offer.description) %></div>
+      <div class="inline-button answer">
+        <%= link_to offer do %>
+          <%= t("helpers.#{current_user == offer.user ? 'show' : 'answer'}") %>
+        <% end %>
       </div>
-
-      <div class="contact">
-        <div class="inline-button toggle-collapse">
-          <div class="short"><%= t 'helpers.more' %>&#x25BC;</div>
-          <div class="long"><%= t 'helpers.less' %>&#x25B2;</div>
-        </div>
-
-        <div class="inline-button answer">
-          <%= link_to offer do %>
-            <%= t("helpers.#{current_user == offer.user ? 'show' : 'answer'}") %>
-          <% end %>
-        </div>
-        <span>&nbsp;|&nbsp;<%= t("offers.show.user", name: offer.user.name) %></span>
-      </div>
-    </fieldset>
+      <span>&nbsp;|&nbsp;<%= t("offers.show.user", name: offer.user.name) %></span>
+    </div>
+  </fieldset>
 <% end %>
