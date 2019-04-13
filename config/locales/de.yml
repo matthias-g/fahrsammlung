@@ -93,9 +93,7 @@ de:
 
   sort:
     sorted: Sortiert nach
-    by_from_date: Einzugsdatum
-    by_rent: Preis
-    by_size: Größe
+    by_start_date: Abfahrtstag
     by_updated_at: Neuestes
 
   offers:

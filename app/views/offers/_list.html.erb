@@ -4,7 +4,7 @@
   </div>
 <% end %>
 <% offers.each do |offer| %>
-  <fieldset class="item sort-item" data-updated-at="<%= offer.updated_at.to_i %>">
+  <fieldset class="item sort-item" data-updated-at="<%= offer.updated_at.to_i %>" data-start-date="<%= offer.start_date.to_time.to_i.to_s + offer.start_time %>">
     <%= badges_for offer %>
 
     <div class="title">

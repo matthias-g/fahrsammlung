@@ -87,9 +87,7 @@ en:
 
   sort:
     sorted: Sorted by
-    by_from_date: Move-in date
-    by_rent: Prize
-    by_size: Size
+    by_start_date: Start date
     by_updated_at: Newest
 
   offers:
