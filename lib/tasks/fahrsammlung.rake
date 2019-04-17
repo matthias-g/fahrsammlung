@@ -19,7 +19,21 @@ namespace :fahrsammlung do
   desc 'unlock all locked users who have offers or requests'
   task unlock_locked_users: :environment do
     User.locked.each do |user|
-      user.unlock! if user.offers.count > 0 || user.requests.count > 0
+      if user.offers.count > 0 || user.requests.count > 0
+        user.unlock!
+        if user.confirmed?
+          Subscription.offers.confirmed.each do |subscriber|
+            user.offers.each do |offer|
+              SubscriptionMailer.new_item_notification(offer, subscriber).deliver_now
+            end
+          end
+          Subscription.requests.confirmed.each do |subscriber|
+            user.requests.each do |request|
+              SubscriptionMailer.new_item_notification(request, subscriber).deliver_now
+            end
+          end
+        end
+      end
     end
   end
 
