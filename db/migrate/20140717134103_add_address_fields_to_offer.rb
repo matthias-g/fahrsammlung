@@ -1,4 +1,4 @@
-class AddAddressFieldsToOffer < ActiveRecord::Migration
+class AddAddressFieldsToOffer < ActiveRecord::Migration[4.2]
   def change
     add_column :offers, :district, :string
     add_column :offers, :street, :string

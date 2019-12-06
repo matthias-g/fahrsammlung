@@ -1,4 +1,4 @@
-class AddUnsubscribeTokenToSubscriptions < ActiveRecord::Migration
+class AddUnsubscribeTokenToSubscriptions < ActiveRecord::Migration[4.2]
   def change
     add_column :subscriptions, :unsubscribe_token, :string
     add_index :subscriptions, :unsubscribe_token, unique: true

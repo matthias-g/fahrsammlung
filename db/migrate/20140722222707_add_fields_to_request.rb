@@ -1,4 +1,4 @@
-class AddFieldsToRequest < ActiveRecord::Migration
+class AddFieldsToRequest < ActiveRecord::Migration[4.2]
   def change
     add_column :requests, :from_date, :datetime
     rename_column :requests, :until, :to_date

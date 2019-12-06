@@ -1,4 +1,4 @@
-class AddFieldsToOffer < ActiveRecord::Migration
+class AddFieldsToOffer < ActiveRecord::Migration[4.2]
   def change
     add_column :offers, :rent, :integer
     add_column :offers, :size, :integer
