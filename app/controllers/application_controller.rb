@@ -39,7 +39,7 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options(options = {})
-    (I18n.locale == :de) ? options : options.merge(locale: I18n.locale)
+    (I18n.locale == :en) ? options : options.merge(locale: I18n.locale)
   end
 
   def verify_captcha

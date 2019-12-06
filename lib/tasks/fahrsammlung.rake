@@ -1,4 +1,4 @@
-namespace :kaheim do
+namespace :fahrsammlung do
   desc 'sends out notifications for newly invisible items and deletes items too old'
   task handle_obsolete: :environment do
     Offer.outdated.find_each do |offer|

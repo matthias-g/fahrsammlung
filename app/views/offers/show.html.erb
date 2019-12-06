@@ -37,37 +37,30 @@
       <tbody>
       <tr>
         <td class="icon">
+          <i class="fas fa-car-side"></i>
         </td>
         <td class="info">
-          <%= gender_icon @offer.gender %>
+          <%= @offer.seat_count %>
         </td>
         <td class="icon">
-          <i class="fa fa-eur"></i>
+          <i class="fas fa-calendar"></i>
         </td>
         <td class="info">
-          <%= @offer.rent %>
+          <%= l @offer.start_date, format: :with_weekday %>
         </td>
       </tr>
       <tr>
         <td class="icon">
-          <i class="fa fa-square-o"></i>
+          <i class="fas fa-home"></i>
         </td>
         <td class="info">
-          <%= @offer.size %>m²
+          <%= @offer.start_location %>
         </td>
         <td class="icon">
-          <i class="fa fa-long-arrow-right"></i>
+          <i class="fas fa-clock"></i>
         </td>
         <td class="info">
-          <%= date_info @offer %>
-        </td>
-      </tr>
-      <tr>
-        <td class="icon">
-          <i class="fa fa-home"></i>
-        </td>
-        <td class="info" colspan="4">
-          <%= address_info @offer %>
+          <%= @offer.start_time %>
         </td>
       </tr>
       </tbody>

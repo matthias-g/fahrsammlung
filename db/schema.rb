@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_25_104015) do
+ActiveRecord::Schema.define(version: 2019_12_06_204335) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,36 +59,30 @@ ActiveRecord::Schema.define(version: 2019_05_25_104015) do
   create_table "offers", force: :cascade do |t|
     t.string "title", limit: 255
     t.text "description"
-    t.date "to_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "rent"
-    t.integer "size"
-    t.integer "gender", default: 0
-    t.date "from_date"
-    t.string "district", limit: 255
-    t.string "street", limit: 255
-    t.string "zip_code", limit: 255
     t.boolean "is_public", default: true
     t.string "owner_name", null: false
     t.string "email", null: false
     t.boolean "blocked", default: false, null: false
     t.datetime "email_confirmed_at"
+    t.string "start_location"
+    t.integer "seat_count"
+    t.date "start_date"
+    t.string "start_time"
   end
 
   create_table "requests", force: :cascade do |t|
     t.string "title", limit: 255
     t.text "description"
-    t.date "to_date"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.date "from_date"
-    t.integer "gender", default: 0
     t.boolean "is_public", default: true
     t.string "owner_name", null: false
     t.string "email", null: false
     t.boolean "blocked", default: false, null: false
     t.datetime "email_confirmed_at"
+    t.string "start_location"
   end
 
   create_table "subscriptions", force: :cascade do |t|

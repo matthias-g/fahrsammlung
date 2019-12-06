@@ -2,7 +2,7 @@ class RequestsController < ApplicationController
   before_action :set_editable_request, only: [:edit, :update, :destroy, :toggle_active, :owner_show]
 
   def index
-    @requests = Request.visible_for(current_user, Request).order(Arel.sql('from_date IS NOT NULL, from_date ASC'), updated_at: :desc)
+    @requests = Request.visible_for(current_user, Request)
   end
 
   def show
@@ -84,6 +84,6 @@ class RequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def request_params
-      params[:request].permit(:owner_name, :email, :title, :description, :from_date, :to_date, :gender)
+      params[:request].permit(:owner_name, :email, :title, :description, :start_location)
     end
 end

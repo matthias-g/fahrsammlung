@@ -15,19 +15,15 @@ en:
       offer:
         title: "Title"
         description: "Description"
-        from_date: "Available from"
-        to_date: "Available until"
         created_at: "Created at"
-        district: 'District'
-        street: 'Street'
-        zip_code: 'ZIP'
-        rent: 'Rent'
-        size: 'Size'
+        seat_count: 'Offered seat count'
+        start_location: Start location
+        start_date: Start day
+        start_time: Start time
       request:
         title: "Title"
         description: "Description"
-        from_date: Need from
-        to_date: "Moving out"
+        start_location: Start Location
         created_at: "Created at"
       item:
         owner_name: "Your name"
@@ -86,12 +82,12 @@ en:
     hide_success: "%{model} successfully hidden."
     hidden: "Not public"
     about: Contact
-    kaheim: About Kaheim
+    fahrsammlung: About Fahrsammlung
     dot: dot
 
   privacy:
     warning: Please do not share any sensible data. All %{model} are publicly accessible.
-    explanation: When your %{model} is published on the website, there will be a contact form shown below your %{model}. People can use it to contact you. Kaheim will then send you an email with the reply. Your contact data is secure (unless you include it in the description).
+    explanation: When your %{model} is published on the website, there will be a contact form shown below your %{model}. People can use it to contact you. Fahrsammlung will then send you an email with the reply. Your contact data is secure (unless you include it in the description).
 
   sort:
     sorted: Sorted by
@@ -176,9 +172,8 @@ en:
     locked: User not unlocked
     outdated: Outdated
     placeholder:
-      title: "Most important information for the overview. Put detailed information in the description."
-      description: "Detailed information and description."
-      temporal: '(if temporal)'
+      title: "Most important information for the overview"
+      description: "Additional information"
     unconfirmed: Unconfirmed email address
     reactivate: Reactivate
     no_access: Offer not found or not public
@@ -199,11 +194,11 @@ en:
     answer_mail:
       subject: "Reply to '%{title}'"
     answer_mail_notification:
-      subject: "Your message sent through kaheim.de"
+      subject: "Your message sent through fahrsammlung.de"
     admin_notice_mail:
       subject: New item
     send_token_mail:
-      subject: "Your %{item_type} on Kaheim"
+      subject: "Your %{item_type} on Fahrsammlung"
     reactivate_item_mail:
       subject: "Update item?"
 
@@ -215,7 +210,7 @@ en:
     subscribe_notification:
       subject: "Subscription created"
     new_item_notification:
-      subject: "New item on Kaheim"
+      subject: "New item on Fahrsammlung"
 
   reactivation:
       success: "Your %{model} was reactivated."
@@ -242,8 +237,8 @@ en:
         strong: "Your %{item_type} is not yet public."
         message: "Use the link that we have emailed to you to activate your %{item_type}."
       message: "Using this link, you can edit or delete your %{item_type} when it is outdated."
-    kaheim:
-      project: The Kaheim project
+    fahrsammlung:
+      project: The Fahrsammlung project
       source: The source code is available on
       issues1: Bugs, problems and feature requests can also be filed on
       issues2: ""

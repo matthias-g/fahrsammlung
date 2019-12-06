@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.com/tim3z/kaheim.svg?branch=destroy_all_users)](https://travis-ci.com/tim3z/kaheim)
-
-Kaheim
+Fahrsammlung
 ======
 
-This is the software running at [kaheim.de](https://kaheim.de)
+This is the software running at [fahrsammlung.de](https://fahrsammlung.de)
 as a platform for young adults looking for a room in a shared flat in Karlsruhe.
 It's written using Ruby on Rails.
 

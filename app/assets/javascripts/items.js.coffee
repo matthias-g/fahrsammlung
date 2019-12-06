@@ -33,8 +33,8 @@ document.addEventListener "turbolinks:load", ->
 
   $('[data-behaviour~=datepicker]').datepicker
     autoclose: true,
-    format: if $('#locale-selection').data('current-locale') == 'en' then "yyyy-mm-dd" else "dd.mm.yyyy",
-    language: if $('#locale-selection').data('current-locale') == 'en' then 'en' else 'de'
+    format: if $('#locale-selection').data('current-locale') == 'de' then "dd.mm.yyyy" else "yyyy-mm-dd",
+    language: if $('#locale-selection').data('current-locale') == 'de' then 'de' else 'en'
 
   # district select
   $('select.select2').select2(allowClear: true)

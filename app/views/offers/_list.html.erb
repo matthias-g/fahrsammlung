@@ -4,8 +4,7 @@
   </div>
 <% end %>
 <% offers.each do |offer| %>
-    <fieldset class="item sort-item" data-rent="<%= offer.rent %>" data-size="<%= offer.size %>" data-from-date="<%= offer.from_date.to_time.to_i %>" data-updated-at="<%= offer.updated_at.to_i %>">
-      <%= badges_for offer %>
+  <fieldset class="item sort-item" data-updated-at="<%= offer.updated_at.to_i %>" data-start-date="<%= offer.start_date.to_time.to_i.to_s + offer.start_time %>">      <%= badges_for offer %>
 
       <div class="title">
         <strong><%= link_to offer.title, offer %></strong>
@@ -15,37 +14,30 @@
         <tbody>
         <tr>
           <td class="icon">
+            <i class="fa fa-car"></i>
           </td>
           <td class="info">
-            <%= gender_icon offer.gender %>
+            <%= offer.seat_count %>
           </td>
           <td class="icon">
-            <i class="fa fa-eur"></i>
+            <i class="fa fa-calendar"></i>
           </td>
           <td class="info">
-            <%= offer.rent %>
-          </td>
-        </tr>
-        <tr>
-          <td class="icon">
-            <i class="fa fa-square-o"></i>
-          </td>
-          <td class="info">
-            <%= offer.size %>m²
-          </td>
-          <td class="icon">
-            <i class="fa fa-long-arrow-right"></i>
-          </td>
-          <td class="info">
-            <%= date_info offer %>
+            <%= l offer.start_date, format: :with_weekday %>
           </td>
         </tr>
         <tr>
           <td class="icon">
             <i class="fa fa-home"></i>
           </td>
-          <td class="info" colspan="3">
-            <%= address_info offer %>
+          <td class="info">
+            <%= offer.start_location %>
+          </td>
+          <td class="icon">
+            <i class="fa fa-clock-o"></i>
+          </td>
+          <td class="info">
+            <%= offer.start_time %>
           </td>
         </tr>
         </tbody>

@@ -15,19 +15,15 @@ de:
       offer:
         title: "Titel"
         description: "Beschreibung"
-        from_date: 'Frei ab'
-        to_date: 'Frei bis'
         created_at: "Erstellt am"
-        district: 'Stadtteil'
-        street: 'Straße und Hausnummer'
-        zip_code: 'PLZ'
-        rent: 'Miete (warm)'
-        size: 'Fläche'
+        seat_count: 'Anzahl freie Plätze'
+        start_location: Abfahrtsort
+        start_date: Abfahrtstag
+        start_time: Abfahrtsuhrzeit
       request:
         title: "Titel"
         description: "Beschreibung"
-        from_date: "Suche zum"
-        to_date: "Auszug"
+        start_location: Abfahrtsort
         created_at: "Erstellt am"
       item:
         owner_name: "Dein Name"
@@ -85,12 +81,12 @@ de:
     hide_success: "%{model} wurde erfolgreich versteckt."
     hidden: "Nicht öffentlich"
     about: Impressum / Datenschutz
-    kaheim: Über Kaheim
+    fahrsammlung: Über Fahrsammlung
     dot: punkt
 
   privacy:
     warning: Bitte keine sensiblen Daten angeben, da alle %{model} öffentlich einsehbar sind!
-    explanation: Unter deinem %{model} wird auf der Website ein Kontaktformular angezeigt mit dem Interessenten auf dein %{model} antworten können. Kaheim schickt dir dann eine Mail mit der Antwort. Deine Kontaktdaten bleiben geschützt (solange du sie nicht oben angibst).
+    explanation: Unter deinem %{model} wird auf der Website ein Kontaktformular angezeigt mit dem Interessenten auf dein %{model} antworten können. Fahrsammlung schickt dir dann eine Mail mit der Antwort. Deine Kontaktdaten bleiben geschützt (solange du sie nicht oben angibst).
 
   sort:
     sorted: Sortiert nach
@@ -176,9 +172,8 @@ de:
     locked: Benutzer nicht freigeschaltet
     outdated: Abgelaufen
     placeholder:
-      title: "Das Wichtigste deines %{model}s für die Übersicht. Detailliertere Infos kommen in die Beschreibung."
-      description: "Detaillierte Infos und ausführliche Beschreibung."
-      temporal: '(bei Zwischenmiete)'
+      title: "Das Wichtigste deines %{model}s für die Übersicht"
+      description: "Weitere Informationen"
     unconfirmed: E-Mail-Adresse unbestätigt
     reactivate: Wieder aktivieren
     no_access: Eintrag wurde nicht gefunden oder ist nicht öffentlich
@@ -199,11 +194,11 @@ de:
     answer_mail:
       subject: "Antwort auf '%{title}'"
     answer_mail_notification:
-      subject: "Deine Nachricht über Kaheim"
+      subject: "Deine Nachricht über Fahrsammlung"
     admin_notice_mail:
-      subject: Neuer Eintrag auf Kaheim
+      subject: Neuer Eintrag auf Fahrsammlung
     send_token_mail:
-      subject: "Dein %{item_type} auf Kaheim"
+      subject: "Dein %{item_type} auf Fahrsammlung"
     reactivate_item_mail:
       subject: "Eintrag verlängern?"
 
@@ -215,7 +210,7 @@ de:
     subscribe_notification:
       subject: "Abonnement erstellt"
     new_item_notification:
-      subject: "Neuer Eintrag auf Kaheim"
+      subject: "Neuer Eintrag auf Fahrsammlung"
 
   reactivation:
     success: "Dein %{model} wurde reaktiviert."
@@ -241,8 +236,8 @@ de:
         strong: "Dein %{item_type} ist noch nicht öffentlich."
         message: "Verwende den Link, den wir dir gemailt haben, um das %{item_type} zu aktivieren."
       message: "Unter diesem Link kannst du dein %{item_type} auch bearbeiten oder löschen, falls es nicht mehr aktuell ist."
-    kaheim:
-      project: Das Kaheim-Projekt
+    fahrsammlung:
+      project: Das Fahrsammlung-Projekt
       source: Der Quellcode ist verfügbar auf
       issues1: Bugs, Probleme und Feature Requests können auf
       issues2: eingetragen werden

@@ -6,15 +6,15 @@ david:
 
 offer_subscriber:
   name: offer subscriber
-  email: send.me.your.offers@kaheim.de
+  email: send.me.your.offers@fahrsammlung.de
 
 request_subscriber:
   name: request subscriber
-  email: send.me.your.requests@kaheim.de
+  email: send.me.your.requests@fahrsammlung.de
 
 everything_subscriber:
   name: everything subscriber
-  email: send.me.everything@kaheim.de
+  email: send.me.everything@fahrsammlung.de
 
 john:
   name: John Ericson
@@ -26,7 +26,7 @@ tina:
 
 admin:
   name: The Administrator
-  email: admin@kaheim.de
+  email: admin@fahrsammlung.de
   admin: true
 
 jim:
