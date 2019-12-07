@@ -52,6 +52,9 @@ document.addEventListener "turbolinks:load", ->
     map: map
     icon: images['revive']
 
+  reviveMarker.addListener 'click', ->
+    window.open('https://www.reviveeurope.org/', '_blank')
+
   markers = []
   infoWindows = []
   marker_data.forEach (marker_entry) =>
