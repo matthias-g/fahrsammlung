@@ -172,7 +172,7 @@ en:
     locked: User not unlocked
     outdated: Outdated
     placeholder:
-      title: "Most important information for the overview"
+      title: "Most important information"
       description: "Additional information"
     unconfirmed: Unconfirmed email address
     reactivate: Reactivate
