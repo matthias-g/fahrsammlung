@@ -168,3 +168,11 @@ div.js-content {
     text-align: right;
   }
 }
+
+#map {
+  height: 400px;
+  @media (max-width: 768px) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
