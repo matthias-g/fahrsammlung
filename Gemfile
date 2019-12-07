@@ -76,6 +76,7 @@ gem 'devise', '~> 4.7.0'
 gem 'high_voltage', '~> 3.1.0'
 
 gem 'geocoder'
+gem 'redis'
 
 # cron scheduling
 gem 'whenever', '~> 0.10.0', require: false
