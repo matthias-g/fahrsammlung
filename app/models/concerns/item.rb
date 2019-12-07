@@ -4,7 +4,7 @@ module Item
   extend ActiveSupport::Concern
 
   included do
-    validates_presence_of :email, :owner_name
+    validates_presence_of :email, :owner_name, :start_location
     attr_readonly :email
 
     has_many :answers, as: :item, dependent: :destroy
@@ -16,6 +16,8 @@ module Item
     scope :current, -> { where("#{table_name}.updated_at >= ?", outdating_date) }
     scope :outdated, -> { where("#{table_name}.updated_at < ?", outdating_date) }
     scope :is_public, -> { where(is_public: true) }
+
+    before_save :update_coordinates
   end
 
   module ClassMethods
@@ -67,5 +69,12 @@ module Item
 
   def owner_show_token
     self.to_sgid(expires_in: nil, for: :owner).to_s
+  end
+
+  def update_coordinates
+    return if start_location.blank?
+    results = Geocoder.search(start_location)
+    coordinates = results.first.coordinates
+    self.start_latitude, self.start_longitude = coordinates[0], coordinates[1]
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_06_204335) do
+ActiveRecord::Schema.define(version: 2019_12_07_132603) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,8 @@ ActiveRecord::Schema.define(version: 2019_12_06_204335) do
     t.integer "seat_count"
     t.date "start_date"
     t.string "start_time"
+    t.float "start_latitude"
+    t.float "start_longitude"
   end
 
   create_table "requests", force: :cascade do |t|
@@ -83,6 +85,8 @@ ActiveRecord::Schema.define(version: 2019_12_06_204335) do
     t.boolean "blocked", default: false, null: false
     t.datetime "email_confirmed_at"
     t.string "start_location"
+    t.float "start_latitude"
+    t.float "start_longitude"
   end
 
   create_table "subscriptions", force: :cascade do |t|

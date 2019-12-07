@@ -3,6 +3,7 @@ set :application, 'fahrsammlung'
 set :repo_url, 'https://github.com/matthias-g/fahrsammlung.git'
 
 # Default branch is :master
+set :branch, 'revive19'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app

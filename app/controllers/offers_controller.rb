@@ -5,7 +5,7 @@ class OffersController < ApplicationController
     @offers = Offer.visible_for(current_user, Offer)
   end
 
-  def showloca
+  def show
     @offer = Offer.visible_for(current_user, Offer).find_by(id: params[:id])
     unless @offer
       redirect_to root_path, flash: { error: t('items.no_access') }

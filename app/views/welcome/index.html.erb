@@ -5,6 +5,31 @@
   <%= render 'welcome_message' %>
 </div>
 
+<script>
+    var marker_data = [
+        <% @offers.each do |offer| %>
+        {
+            position: {lat: <%= offer.start_latitude %>, lng: <%= offer.start_longitude %>},
+            type: 'offer',
+            title: '<%= offer.title %>',
+            location: '<%= offer.start_location %>',
+            item_id: <%= offer.id %>
+        },
+        <% end %>
+        <% @requests.each do |request| %>
+        {
+            position: {lat: <%= request.start_latitude %>, lng: <%= request.start_longitude %>},
+            type: 'request',
+            title: '<%= request.title %>',
+            location: '<%= request.start_location %>',
+            item_id: <%= request.id %>
+        },
+        <% end %>
+    ];
+</script>
+
+<div id="map"></div>
+
 <%= render partial: 'shared/list_page_header', locals: { count: @offers.count, item: 'offer', header_class: 'welcome-list-header'} %>
 <% if @offers.count > 2 %>
   <div class="row">

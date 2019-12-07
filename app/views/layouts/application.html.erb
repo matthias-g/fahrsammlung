@@ -5,6 +5,8 @@
   <title><%= (yield(:title) + ' - ' unless yield(:title).blank?).to_s + 'Fahrsammlung' %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <script src="<%= "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials[:google_api_key]}&callback=initMap".html_safe %>"
+          async defer></script>
   <%= favicon_link_tag 'logo.png' %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
