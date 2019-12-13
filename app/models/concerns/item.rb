@@ -74,6 +74,7 @@ module Item
   def update_coordinates
     return if start_location.blank?
     results = Geocoder.search(start_location)
+    return if results.empty?
     coordinates = results.first.coordinates
     self.start_latitude, self.start_longitude = coordinates[0], coordinates[1]
   end
