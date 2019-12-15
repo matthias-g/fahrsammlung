@@ -8,6 +8,7 @@
 <script>
     var marker_data = [
         <% @offers.each do |offer| %>
+        <% next unless offer.start_latitude && offer.start_longitude %>
         {
             position: {lat: <%= offer.start_latitude %>, lng: <%= offer.start_longitude %>},
             type: 'offer',
@@ -17,6 +18,7 @@
         },
         <% end %>
         <% @requests.each do |request| %>
+        <% next unless request.start_latitude && request.start_longitude %>
         {
             position: {lat: <%= request.start_latitude %>, lng: <%= request.start_longitude %>},
             type: 'request',
