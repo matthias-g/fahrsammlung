@@ -10,7 +10,7 @@
         <% @offers.each do |offer| %>
         <% next unless offer.start_latitude && offer.start_longitude %>
         {
-            position: {lat: <%= welcome_sanitize_int offer.start_latitude %>, lng: <%= welcome_sanitize_int offer.start_longitude %>},
+            position: {lat: <%= offer.start_latitude %>, lng: <%= offer.start_longitude %>},
             type: 'offer',
             title: '<%= welcome_sanitize offer.title %>',
             location: '<%= welcome_sanitize offer.start_location %>',
@@ -20,7 +20,7 @@
         <% @requests.each do |request| %>
         <% next unless request.start_latitude && request.start_longitude %>
         {
-            position: {lat: <%= welcome_sanitize_int request.start_latitude %>, lng: <%= welcome_sanitize_int request.start_longitude %>},
+            position: {lat: <%= request.start_latitude %>, lng: <%= request.start_longitude %>},
             type: 'request',
             title: '<%= welcome_sanitize request.title %>',
             location: '<%= welcome_sanitize request.start_location %>',
