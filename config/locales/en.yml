@@ -91,10 +91,8 @@ en:
 
   sort:
     sorted: Sorted by
-    by_from_date: Move-in date
-    by_rent: Prize
-    by_size: Size
-    by_updated_at: Newest
+    by_start_date: start date
+    by_updated_at: newest
 
   offers:
     invalid_token: Offer not found
