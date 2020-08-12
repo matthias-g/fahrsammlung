@@ -112,7 +112,7 @@ GEM
       capistrano (~> 3.7)
       capistrano-bundler
       puma (~> 3.4)
-    chartkick (3.0.2)
+    chartkick (3.4.0)
     chronic (0.10.2)
     coderay (1.1.2)
     coffee-rails (5.0.0)
@@ -332,7 +332,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.5.0)
   capistrano-rails (~> 1.4.0)
   capistrano3-puma (~> 3.1.1)
-  chartkick (~> 3.0.2)
+  chartkick (~> 3.4.0)
   coffee-rails (~> 5.0.0)
   devise (~> 4.7.0)
   dotenv-rails (~> 2.7.2)
