@@ -29,7 +29,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 2.1.0'
   gem 'letter_opener', '~> 1.7.0'
-  gem 'better_errors', '~> 2.5.1'
+  gem 'better_errors', '~> 2.8.0'
   gem 'binding_of_caller', '~> 0.8.0'
   gem 'listen', '~> 3.1.5'
 end
